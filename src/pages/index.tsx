@@ -1,9 +1,10 @@
+import Head from 'next/head';
+
 import { ComplatedChallenges } from '../components/CompletedChallenges';
 import { CountDown } from '../components/Countdown';
 import { ExperienceBar } from '../components/ExperienceBar';
 import { Profile } from '../components/Profile';
-
-import Head from 'next/head';
+import { ChallengesBox } from '../components/ChallengesBox';
 
 import styles from '../styles/pages/Home.module.css'
 
@@ -22,7 +23,9 @@ export default function Home() {
           <ComplatedChallenges />
           <CountDown />
         </div>
-        <div></div>
+        <div>
+          <ChallengesBox />
+        </div>
       </section>
     </div>
   );
