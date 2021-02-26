@@ -3,7 +3,7 @@ import styles from '../styles/components/CountDown.module.css';
 import { CountdownContext } from '../contexts/CountdownContext';
 
 export function CountDown() {
-  const { minutes, seconds, hasFinished, isActive, startCountDown, resertCountDown } = useContext(CountdownContext)
+  const { minutes, seconds, hasFinished, isActive, startCountDown, resertCountDown } = useContext(CountdownContext);
 
   const [minuteLeft, minuteRight] = String(minutes).padStart(2, '0').split('');
   const [secondLeft, secondRight] = String(seconds).padStart(2, '0').split('');
